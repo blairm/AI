@@ -1,0 +1,6 @@
+*.sublime-workspace
+*.lnk
+*.user
+*.vs/
+KSOM/build
+NN/build
