@@ -1,0 +1,1 @@
+Implementation of Generative Topographic Map (GTM) from https://www.microsoft.com/en-us/research/wp-content/uploads/1998/01/bishop-gtm-ncomp-98.pdf
