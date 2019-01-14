@@ -315,10 +315,11 @@ namespace
         f64* dPtr       = globalDIST.m.base;
 
         for( s32 i = 0; i < count; ++i )
-        {
             totalSum += rPtr[ i ] * dPtr[ i ];
-            rPtr[ i ] = dPtr[ i ];
-        }
+
+        XMaths::Mf64 swap   = globalR;
+        globalR             = globalDIST;
+        globalDIST          = swap;
 
         beta = ( f64 ) ( input.rowCount * input.columnCount ) / totalSum;
     }
